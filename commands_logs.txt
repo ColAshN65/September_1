@@ -1,0 +1,40 @@
+mkdir -p {users,groups,subjects}
+cd users
+touch helper.sh
+nano helper.sh
+{
+	for ((i=0; i<50; i++))
+	do
+	touch subject${i}.txt 
+	done
+}
+chmod +x helper.sh
+./helper.sh
+cd ..
+cd groups
+touch helper.sh
+nano helper.sh 
+{
+	for ((i=0; i<207; i++))
+	do
+	touch user${i}.txt
+	done
+}
+chmod +x helper.sh
+./helper.sh
+cd ..
+cd subjects
+touch helper.sh
+nano helper.sh
+{
+	for ((i=0; i<69; i++))
+	do
+	touch group${i}.txt
+	done
+}
+chmod +x helper.sh
+./helper.sh
+cd ..
+touch commands_logs.txt
+nano commands_logs.txt
+
