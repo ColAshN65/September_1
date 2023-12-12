@@ -35,7 +35,8 @@ nano helper.sh
 chmod +x helper.sh
 ./helper.sh
 cd ..
-touch commands_logs.txt
-nano commands_logs.txt
+git add users
+git add groups
+git add subjects
 git commit -m 'task done'
 git push origin main
